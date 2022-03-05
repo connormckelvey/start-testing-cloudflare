@@ -1,6 +1,6 @@
 {
   "name": "start-testing-cloudflare",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Start Testing is a lightweight Typescript Testing Library with 0 dependencies and a minimal yet flexible API to get you from concept to validation as fast as possible",
   "keywords": [
     "typescript",
@@ -21,7 +21,7 @@
     "url": "https://github.com/connormckelvey/start-testing-cloudflare/issues"
   },
   "homepage": "https://github.com/connormckelvey/start-testing-cloudflare#readme",
-  "main": "./dist/index.mjs",
+  "main": "./dist/index.js",
   "types": "./lib/index.d.ts",
   "files": [
     "dist/**/*",
@@ -31,8 +31,9 @@
   ],
   "scripts": {
     "test": "node --loader ts-node/esm ./scripts/runTests.ts",
-    "clean": "rm -rf lib",
-    "compile": "tsc -p tsconfig.build.json && node ./scripts/build.js",
+    "clean": "rm -rf dist",
+    "compile": "tsc -p tsconfig.build.json",
+    "#compile": "tsc -p tsconfig.build.json && node ./scripts/build.js",
     "build": "npm run clean && npm run compile"
   },
   "devDependencies": {

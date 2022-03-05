@@ -2,12 +2,20 @@
     "extends": "./tsconfig.json",
     "compilerOptions": {
         "declaration": true,
-        "emitDeclarationOnly": true,
-        "module": "ESNext",
+        // "emitDeclarationOnly": true,
+        "outDir": "dist",
         "types": [
             "@types/node",
-          ]
+        ]
     },
-    "include": ["src"],
-    "exclude": ["node_modules", "lib", "scripts", "test", "**/*.test.*"]
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "node_modules",
+        "lib",
+        "scripts",
+        "test",
+        "**/*.test.*"
+    ]
 }
