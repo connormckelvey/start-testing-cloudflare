@@ -15,4 +15,4 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: cd example && npm ci
-      - run: npm test
+      - run: CF_ACCOUNT_ID=${{ secrets.CF_ACCOUNT_ID }} CF_API_TOKEN=${{ secrets.CF_API_TOKEN }} npm test
