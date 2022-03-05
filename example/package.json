@@ -1,0 +1,27 @@
+{
+  "name": "start-testing-cloudflare-example",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "author": "Connor McKelvey",
+  "license": "MIT",
+  "main": "./dist/index.mjs",
+  "scripts": {
+    "test": "node --loader ts-node/esm ./scripts/runTests.ts",
+    "clean": "rm -rf dist",
+    "compile": "node ./scripts/build.js",
+    "build": "npm run clean && npm run compile",
+    "reinstall": "rm -rf node_modules/start-testing-cloudflare && rm -rf package-lock.json && npm install"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.23",
+    "glob": "^7.2.0",
+    "start-testing-cloudflare": "file:..",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@cloudflare/workers-types": "^3.4.0",
+    "start-testing": "^1.0.4"
+  }
+}
