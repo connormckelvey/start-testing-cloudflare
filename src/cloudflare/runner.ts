@@ -1,17 +1,21 @@
 import * as testing from 'start-testing'
-import { CloudflareContext, CloudflareContextJSON } from './context.js'
+import { CloudflareContext, CloudflareContextJSON, ExecutionContext } from './context.js'
 import { CloudflareLogger } from './logger.js'
 
 const defaultOptions = {
     logger: new CloudflareLogger()
 }
 
-export class CloudflareRunner extends CloudflareContext {
+export class CloudflareRunner<E = any> extends CloudflareContext<E> {
+
     constructor(name: string, readonly tests: testing.Tests, opts: testing.ContextOptions = defaultOptions) {
-        super(name, opts)
+        super(name, opts, {})
     }
 
-    async fetch(req: Request) {
+    async fetch(req: Request, env?: E, ctx?: ExecutionContext) {
+        this.cf.env = env
+        this.cf.ctx = ctx
+
         const { pathname } = new URL(req.url)
         const [ name ] = pathname.split('/').reverse()
 

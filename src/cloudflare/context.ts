@@ -12,8 +12,26 @@ export type CloudflareContextJSON = {
     }
 }
 
-export class CloudflareContext extends testing.Context {    
-    new = (name: string) => new CloudflareContext(name, this.opts) 
+// TODO: this is hacky, but avoids a mess with type conflicts
+export interface ExecutionContext {
+    waitUntil(promise: Promise<any>): void;
+    passThroughOnException(): void;
+}
+
+export type CloudflareEnvironment<E = any> = {
+    env?: E,
+    ctx?: ExecutionContext
+}
+
+export class CloudflareContext<E = any> extends testing.Context {
+    readonly cf: CloudflareEnvironment<E> = {}
+
+    constructor(name: string, opts: testing.ContextOptions, cf: CloudflareEnvironment = {}) {
+        super(name, opts)
+        this.cf = cf
+    }
+
+    new = (name: string) => new CloudflareContext(name, this.opts, this.cf)
 
     protected toJSON(): CloudflareContextJSON {
         return {

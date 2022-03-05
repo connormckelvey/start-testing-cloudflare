@@ -1,14 +1,16 @@
 {
   "name": "start-testing-cloudflare",
-  "version": "1.0.8",
-  "description": "Start Testing is a lightweight Typescript Testing Library with 0 dependencies and a minimal yet flexible API to get you from concept to validation as fast as possible",
+  "version": "0.0.1",
+  "description": "Start Testing Cloudflare is a lightweight test harness for testing Cloudflare Workers and Durable Objects",
   "keywords": [
     "typescript",
     "testing",
-    "painless",
+    "cloudflare-workers",
+    "durable-objects",
     "test-library",
     "fast-testing",
-    "tdd"
+    "tdd",
+    "serverless"
   ],
   "type": "module",
   "author": "Connor McKelvey",
@@ -50,8 +52,6 @@
     "@cloudflare/workers-types": "^3.4.0",
     "@types/node": "^17.0.21",
     "chai": "^4.3.6",
-    "esbuild": "^0.14.23",
-    "glob": "^7.2.0",
     "tree-kill": "^1.2.2",
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5"

@@ -11,7 +11,7 @@ class QuietLogger extends CloudflareLogger {
 
 export async function testCloudflareContextToJSON(t: testing.Context) {
     class TestContext extends CloudflareContext {
-        new = (name: string) => new TestContext(name, this.opts)
+        new = (name: string) => new TestContext(name, this.opts, this.cf)
 
         assert(t: testing.Context) {
             const assert = chaiAssert(t)
