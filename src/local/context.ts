@@ -1,6 +1,6 @@
 import * as testing from 'start-testing'
-import { CloudflareContextJSON } from './cloudflareContext.js'
-import { LocalLogger } from './localLogger.js'
+import { CloudflareContextJSON } from '../cloudflare/context.js'
+import { LocalLogger } from './logger.js'
 
 export class LocalContext extends testing.Context {
     static fromJSON(data: CloudflareContextJSON) {

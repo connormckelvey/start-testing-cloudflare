@@ -1,10 +1,11 @@
 import * as testing from 'start-testing'
 import fetch from 'node-fetch'
 
-import { CloudflareContextJSON } from './cloudflareContext.js'
-import { LocalContext } from './localContext.js'
-import { CloudflareRunner } from './cloudflareRunner.js'
-import { LocalLogger } from './localLogger.js'
+import { CloudflareContextJSON } from '../cloudflare/context.js'
+import { CloudflareRunner } from '../cloudflare/runner.js'
+
+import { LocalContext } from './context.js'
+import { LocalLogger } from './logger.js'
 
 const defaultOptions = {
     logger: new LocalLogger()

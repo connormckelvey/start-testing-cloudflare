@@ -7,4 +7,4 @@ export class LocalLogger extends NodeColorLogger {
     }
     new = () => new LocalLogger();
 }
-//# sourceMappingURL=localLogger.js.map
+//# sourceMappingURL=logger.js.map

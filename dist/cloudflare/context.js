@@ -12,4 +12,4 @@ export class CloudflareContext extends testing.Context {
         };
     }
 }
-//# sourceMappingURL=cloudflareContext.js.map
+//# sourceMappingURL=context.js.map

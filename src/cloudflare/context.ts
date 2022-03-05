@@ -1,5 +1,5 @@
 import * as testing from 'start-testing'
-import { CloudflareLogger } from './cloudflareLogger.js'
+import { CloudflareLogger } from './logger.js'
 
 export type CloudflareContextJSON = {
     name: string

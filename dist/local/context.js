@@ -1,5 +1,5 @@
 import * as testing from 'start-testing';
-import { LocalLogger } from './localLogger.js';
+import { LocalLogger } from './logger.js';
 export class LocalContext extends testing.Context {
     static fromJSON(data) {
         const ctx = new LocalContext(data.name, { logger: new LocalLogger() });
@@ -19,4 +19,4 @@ export class LocalContext extends testing.Context {
         this.logger.dump();
     }
 }
-//# sourceMappingURL=localContext.js.map
+//# sourceMappingURL=context.js.map

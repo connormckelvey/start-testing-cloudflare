@@ -7,4 +7,4 @@ export class CloudflareLogger extends testing.Logger {
         };
     }
 }
-//# sourceMappingURL=cloudflareLogger.js.map
+//# sourceMappingURL=logger.js.map

@@ -1,1 +1,0 @@
-{"version":3,"file":"cloudflareLogger.js","sourceRoot":"","sources":["../src/cloudflareLogger.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,OAAO,MAAM,eAAe,CAAA;AAExC,MAAM,OAAO,gBAAiB,SAAQ,OAAO,CAAC,MAAM;IAChD,GAAG,GAAG,GAAG,EAAE,CAAC,IAAI,gBAAgB,EAAE,CAAA;IAElC,MAAM;QACF,OAAO;YACH,IAAI,EAAE,IAAI,CAAC,IAAI;SAClB,CAAA;IACL,CAAC;CACJ"}

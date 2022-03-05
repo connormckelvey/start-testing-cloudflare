@@ -1,7 +1,8 @@
-export * from './cloudflareContext.js';
-export * from './cloudflareLogger.js';
-export * from './cloudflareRunner.js';
-export * from './localContext.js';
-export * from './localLogger.js';
-export * from './localRunner.js';
+export * from './cloudflare/index.js';
+export * from './local/index.js';
+let f = {
+    fetch(req) {
+        console.log(req);
+    },
+};
 //# sourceMappingURL=index.js.map

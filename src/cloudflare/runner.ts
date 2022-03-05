@@ -1,6 +1,6 @@
 import * as testing from 'start-testing'
-import { CloudflareContext, CloudflareContextJSON } from './cloudflareContext.js'
-import { CloudflareLogger } from './cloudflareLogger.js'
+import { CloudflareContext, CloudflareContextJSON } from './context.js'
+import { CloudflareLogger } from './logger.js'
 
 const defaultOptions = {
     logger: new CloudflareLogger()

@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
-import { LocalContext } from './localContext.js';
-import { LocalLogger } from './localLogger.js';
+import { LocalContext } from './context.js';
+import { LocalLogger } from './logger.js';
 const defaultOptions = {
     logger: new LocalLogger()
 };
@@ -29,4 +29,4 @@ export class LocalRunner extends LocalContext {
         return numFailed;
     }
 }
-//# sourceMappingURL=localRunner.js.map
+//# sourceMappingURL=runner.js.map

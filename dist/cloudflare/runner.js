@@ -1,5 +1,5 @@
-import { CloudflareContext } from './cloudflareContext.js';
-import { CloudflareLogger } from './cloudflareLogger.js';
+import { CloudflareContext } from './context.js';
+import { CloudflareLogger } from './logger.js';
 const defaultOptions = {
     logger: new CloudflareLogger()
 };
@@ -28,4 +28,4 @@ export class CloudflareRunner extends CloudflareContext {
         return this.toJSON();
     }
 }
-//# sourceMappingURL=cloudflareRunner.js.map
+//# sourceMappingURL=runner.js.map

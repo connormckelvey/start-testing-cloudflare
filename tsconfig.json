@@ -10,11 +10,10 @@
     "sourceMap": true,
     "lib": [
       "ESNext",
-      "dom"
     ],
     "types": [
+      "@cloudflare/workers-types",
       "@types/node",
-      "@cloudflare/workers-types"
     ]
   },
   "include": [
@@ -24,6 +23,6 @@
   ],
   "exclude": [
     "node_modules",
-    "lib"
+    "dist"
   ]
 }
