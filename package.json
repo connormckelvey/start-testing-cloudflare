@@ -1,6 +1,6 @@
 {
   "name": "start-testing-cloudflare",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Start Testing Cloudflare is a lightweight test harness for testing Cloudflare Workers and Durable Objects",
   "keywords": [
     "typescript",
